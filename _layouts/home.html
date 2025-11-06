@@ -1,0 +1,19 @@
+---
+layout: base
+---
+
+{% if site.show_hero != false and site.hero_image %}
+  <style>
+    .hero { max-width:980px; margin: 1.2rem auto 2.9rem; text-align:center; }
+    .hero img {
+      width: 300px; height: 300px; object-fit: cover;
+      border-radius: 18px; /* use 50% for a circle */
+      box-shadow: 0 10px 22px rgba(0,0,0,.08);
+    }
+  </style>
+  <div class="hero" markdown="0">
+    <img src="{{ site.hero_image | relative_url }}" alt="{{ site.hero_alt | default: site.name }}">
+  </div>
+{% endif %}
+
+{{ content }}

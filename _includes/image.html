@@ -1,16 +1,24 @@
 {% comment %}
 Source: https://superdevresources.com/image-caption-jekyll/
+Guarded so it doesn't render on homepage.
 {% endcomment %}
 
-<div class="image-wrapper" >
-{% if include.url %}
-<a href="{{ include.url }}" title="{{ include.title }}" target="_blank">
-{% endif %}
-<img src="{{ include.img }}" alt="{{ include.title }}"/>
-{% if include.url %}
-</a>
-{% endif %}
-{% if include.caption %}
-<p class="image-caption">{{ include.caption }}</p>
-{% endif %}
+{% if page.url == '/' or page.layout == 'index' or page.layout == 'home' %}
+  {%- comment -%} Skip image on homepage {%- endcomment -%}
+{% else %}
+<div class="image-wrapper">
+  {% if include.url %}
+  <a href="{{ include.url }}" title="{{ include.title }}" target="_blank">
+  {% endif %}
+
+  <img src="{{ include.img }}" alt="{{ include.title }}"/>
+
+  {% if include.url %}
+  </a>
+  {% endif %}
+
+  {% if include.caption %}
+  <p class="image-caption">{{ include.caption }}</p>
+  {% endif %}
 </div>
+{% endif %}

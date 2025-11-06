@@ -1,19 +1,41 @@
-name: Ecem Şimşek
-url: https://ecemsimsekk.github.io
-destination: ./_site
-twitter: brandondamos
-lsi: false
-port: 4000
+# Site identity
+title: "Ecem Şimşek"
+name:  "Ecem Şimşek"
+description: "Graph Signal Processing • GNNs • Visibility Graphs"
+url: "https://ecemsimsekk.github.io"   # canonical root
+baseurl: ""                            # user site → keep empty
+
+# Build & markdown
+permalink: pretty
 markdown: kramdown
-future: true
 kramdown:
   parse_block_html: true
   syntax_highlighter: rouge
-permalink: pretty
-#paginate: 5
+future: true
+
+# Local dev only (safe to keep)
+port: 4000
+destination: ./_site
+
+# Show/hide the top navbar
+show_nav: false
+
+# Homepage hero controls
+show_hero: true
+hero_image: /assets/ecem.jpg
+hero_alt: "Ecem Şimşek"
+
+# Social / contacts (used by header or SEO tag)
+github_username: ecemsimsekk
+#twitter_username:
+email: ecem.simsek@bilkent.edu.tr
+linkedin: https://www.linkedin.com/in/ecem-%C5%9Fim%C5%9Fek-3601b618b/
+scholar: https://scholar.google.com/citations?user=ZrC2RNwAAAAJ&hl=tr
+
+# Plugins (supported by GitHub Pages)
 plugins:
   - jekyll-sitemap
-  - jekyll-datapage-generator
+  - jekyll-seo-tag    # add SEO metadata
 
 exclude:
   - .travis.yml
@@ -21,7 +43,5 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
-  - bower_components
-  - update-vendor-deps.sh
   - vendor/bundle
-  - vendor/bower.json
+  - node_modules
