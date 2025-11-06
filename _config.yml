@@ -45,3 +45,10 @@ exclude:
   - Gemfile.lock
   - vendor/bundle
   - node_modules
+  - animations
+  - blog
+  - meet
+  - pgp
+  - bio
+  - data
+  - _posts
