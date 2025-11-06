@@ -17,11 +17,11 @@ title: "Ecem Şimşek"
   <ul class="links">
     <li>
       <a href="mailto:ecem.simsek@bilkent.edu.tr">
-        <i class="fa fa-envelope" aria-hidden="true"></i><span>Email</span>
+        <i class="fa fa-envelope" aria-hidden="true"></i><span>Email: ecem.simsek@bilkent.edu.tr</span>
       </a>
     </li>
     <li>
-      <a href="assets/Ecem_Simsek_Resume.pdf">
+      <a href="assets/Ecem_Simsek_Resume.pdf" target="_blank" rel="noopener">
         <i class="fa fa-file-text-o" aria-hidden="true"></i><span>CV</span>
       </a>
     </li>
