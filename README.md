@@ -2,6 +2,7 @@
 
 # About
 This is the repository that contains the source codes for my personal website, you can reach it here: [https://ecemsimsekk.github.io](https://ecemsimsekk.github.io).
+
 The template is from Brandon Amos' personal website that could be accessed from: [https://bamos.github.io](https://bamos.github.io).
 
 Unless stated otherwise, all content is MIT-licensed.
